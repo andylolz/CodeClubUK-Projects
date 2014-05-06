@@ -651,6 +651,9 @@ ul ol, ul ul {
 .files-item.materials:hover {
   background: none;
 }
+.world .files-item.materials:hover {
+  background: none;
+}
 .world .files-item {
   border-top-color: rgba(52, 119, 209, 0.25);
   color: #3477d1;
@@ -685,11 +688,12 @@ ul ol, ul ul {
   text-decoration: none;
 }
 .world .files-link.materials {
-  border-color: 2px solid rgba(52, 119, 209, 0.5);
+  border-color: rgba(52, 119, 209, 0.5);
   color: #3477d1;
 }
 .world .files-link.materials:hover {
   background: rgba(52, 119, 209, 0.5);
+  color: #fff;
 }
 
 .home-link {
