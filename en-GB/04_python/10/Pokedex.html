@@ -187,7 +187,7 @@ lblNameValue.pack()</code></pre>
 def showPokemonData():
     #get the number typed into the entry box
     pokemonNumber = txtPokemonNo.get()
-    
+
     #use the function in the &#39;pokeapi.py&#39; file to get pokemon data
     pokemonDictionary = getPokemonData(pokemonNumber)
 
@@ -262,7 +262,7 @@ def showPokemonData():
     lblAttackValue.configure(text = pokemonDictionary[&quot;attack&quot;])
     lblDefenceValue.configure(text = pokemonDictionary[&quot;defense&quot;])
     lblSpeedValue.configure(text = pokemonDictionary[&quot;speed&quot;])
-    
+
     #add the image and add it to a label
     lblImage.configure(image=pokemonImage)
     lblImage.image = pokemonImage</code></pre>
@@ -279,6 +279,7 @@ def showPokemonData():
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
 
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
     <!-- Google Analytics -->
     <script type="text/javascript">
       var _gaq = _gaq || [];

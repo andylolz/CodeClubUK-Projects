@@ -7,6 +7,7 @@
     <meta name="google-site-verification" content="nWes9BQTXEGtw07ONgav0RiqPqz2HBttJnPF1aW7xCI" />
 
     <title>Kolorowe kredki — Code Club UK Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccuk_favicon.ico">
 
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -240,8 +241,8 @@
 <p><strong>Dodajmy specjalną kredkę, który rysuje we wszystkich kolorach tęczy.</strong> Zwykłe kredki tego nie potrafią, więc masz teraz okazję pokazać, że rysowanie na komputerze pozwala robić rzeczy, które nie są normalnie możliwe. Aby to zrobić, musisz często zmieniać kolor kredki.</p>
 <p><strong>Na początek dodaj jednak przycisk wyboru tęczowego koloru i tęczowy kostium dla duszka-kredki:</strong></p>
 <ul>
-<li><strong>Dodaj nowego duszka z wyborem koloru</strong> na dole tablicy, tuż obok innych przycisków. Skorzystaj z kostiumu z pliku 'Zasoby/teczowy-kolor' i każ mu nadawać wiadomość <strong>tęcza</strong> po kliknięciu.<br /></li>
-<li>Dodaj kostium z pliku 'Zasoby/teczowa-kredka' do duszka-kredki.</li>
+<li><strong>Dodaj nowego duszka z wyborem koloru</strong> na dole tablicy, tuż obok innych przycisków. Skorzystaj z kostiumu z pliku ‘Zasoby/teczowy-kolor’ i każ mu nadawać wiadomość <strong>tęcza</strong> po kliknięciu.<br /></li>
+<li>Dodaj kostium z pliku ‘Zasoby/teczowa-kredka’ do duszka-kredki.</li>
 </ul>
 <p>Potrzebujesz zbudować skrypt, który będzie zmieniał kolor kredki wiele razy w ciągu sekundy, aby oddać efekt tęczy. Zmienianie koloru o 5 co 0,05 sekundy działa całkiem dobrze, ale przetestuj inne wartości. Skorzystaj z bloku <code class="blockgreen">zmień kolor pisaka o 5</code>.</p>
 <p>Musisz też pilnować, aby ta pętla zmieniała kolory tylko wtedy, kiedy jest wybrana tęczowa kredka – w przeciwnym razie wszystkie kredki będą rysować na tęczowo! Możesz to zrobić w sposób podobny do tego, w który kontrolujesz, czy rysujesz, czy stawiasz pieczątki. Musisz stworzyć <code class="blocklightgrey">zmienną</code> <code class="blockorange">pokażTęczę</code>, która ma wartość <strong>prawda</strong> jeżeli chcesz rysować tęczę i wartość <strong>fałsz</strong>, jeżeli nie chcesz. Za każdym razem, gdy kredka reaguje na wiadomość odebraną od przycisku na dole tablicy, powinna ustawiać odpowiednią wartość dla zmiennej <code class="blockorange">pokażTęczę</code>.</p>
@@ -307,10 +308,31 @@
     </main>
 
     <aside class="legal-notice copyright">
-      <p>These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. This coursework is developed in the open on GitHub (<a href="http://github.com/CodeClub/">github.com/CodeClub</a>), come and join us!</p>
+      <p>These projects are for use inside the UK only. All Code Clubs <strong>must</strong> be registered. You can check registered clubs on the map at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>.<br />This coursework is developed in the open on GitHub, at <a href="http://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
 
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Zadania do wykonania" /></td>
+          <td><span class="check_text">Zadania do wykonania</span></td>
+          <td>Wykonaj te <span class="check_text upper">polecenia</span> krok po kroku</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Przetestuj swój projekt" /></td>
+          <td><span class="flag_text">Przetestuj swój projekt</span></td>
+          <td>Kliknij na zieloną flagę, aby <span class="flag_text upper">przetestować</span> swój kod</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Zapisz swój projekt" /></td>
+          <td><span class="save_text">Zapisz swój projekt</span></td>
+          <td>Teraz <span class="save_text upper">zapisz</span> swój projekt</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
     <!-- Google Analytics -->
     <script type="text/javascript">
       var _gaq = _gaq || [];
