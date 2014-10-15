@@ -35,7 +35,7 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Open IDLE, and either open your file from last week and save it as a new file, or if you can’t find it, copy the following in:</p>
-<pre class="{.language-python}"><code>from tkinter import *
+<pre class="language-python"><code>from tkinter import *
 
 main = Tk()
 
@@ -121,13 +121,13 @@ mainloop()</code></pre></li>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>At the top of the file, we will have to import the <code>random</code> library, so we can pick a move</p>
-<pre class="{.language-python}"><code>from tkinter import *
+<pre class="language-python"><code>from tkinter import *
 import random</code></pre></li>
 </ul>
 <p>You hopefully remember using <code>random.choice</code> from the earlier lessons.</p>
 <ul>
 <li><p>In the same file we will introduce a new function, <code>free_squares</code>: Add this code below the function <code>winner</code>, and above the line <code>c.bind(...)</code>:</p>
-<pre class="{.language-python}"><code>def free_squares():
+<pre class="language-python"><code>def free_squares():
 output = []
 
 for position, square in enumerate(grid):
@@ -140,7 +140,7 @@ return output</code></pre></li>
 <p>We use a function <code>enumerate</code> to tell us the positions of each item in the list. <code>enumerate</code> turns a list of [‘A’,‘B’,‘C’] into pairs of (0, ‘A’), (1,‘B’) and so on, so we don’t have to count them</p>
 <ul>
 <li><p>Next we write a function <code>play_move()</code> which finds an empty square to play in. Add this function after <code>free_squares</code> and before the line <code>c.bind(...)</code></p>
-<pre class="{.language-python}"><code>def play_move()
+<pre class="language-python"><code>def play_move()
 moves  = free_squares()
 move   = random.choice(moves)
 down   = move // 3
@@ -162,7 +162,7 @@ c.create_line(across * 200, (down + 1) * 200, (across + 1) * 200, down * 200)</c
 <p><code>5 % 3</code> is 2, <code>6 % 3</code> is + The <code>%</code> operator gives us the remainder, which is how far along we must go.</p>
 <ul>
 <li><p>Now we will edit the click() function to use <code>play_move</code>, so after you click, the computer makes a move.</p>
-<pre class="{.language-python}"><code>def click(event):
+<pre class="language-python"><code>def click(event):
 global shape, grid
 
 across = int(c.canvasx(event.x)/200)
@@ -197,7 +197,7 @@ play_move()</code></pre></li>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Edit the <code>winner</code> function to take an argument <code>grid</code>:</p>
-<pre class="{.language-python}"><code>def winner(grid):
+<pre class="language-python"><code>def winner(grid):
 for across in range(3):
     row  = across * 3
     line = grid[row] + grid[row + 1] + grid[row + 2]
@@ -224,7 +224,7 @@ if line == &quot;XXX&quot; or line == &quot;OOO&quot;:
 <p>You should only have to change the first line of the function. This means <code>winner</code> will use a grid passed to it, instead of the grid of the current game</p>
 <ul>
 <li><p>Now we change <code>click</code> to pass in this grid.</p>
-<pre class="{.language-python}"><code>def click(event):
+<pre class="language-python"><code>def click(event):
 global shape, grid
 across = int(c.canvasx(event.x)/200)
 down = int(c.canvasy(event.y)/200)
@@ -250,9 +250,9 @@ play_move()</code></pre></li>
 </ul>
 <p>Every time you see <code>winner()</code>, you replace it with <code>winner(grid)</code>.</p>
 <ul>
-<li>Run your code, it should work like before. It is important to make sure we haven’t made any mistakes.</li>
+<li>Run your code, it should work like before. It is important to make sure we haven’t made any mistakes.<br /></li>
 <li><p>Let’s change play_move to find a winning move!</p>
-<pre class="{.language-python}"><code>def play_move():
+<pre class="language-python"><code>def play_move():
 move = -1
 moves = free_squares()
 
@@ -302,7 +302,7 @@ c.create_line(
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Edit <code>play_move</code> to find the players winning move, and block it!</p>
-<pre class="{.language-python}"><code>def play_move():
+<pre class="language-python"><code>def play_move():
 move = -1
 moves = free_squares()
 
@@ -350,7 +350,7 @@ c.create_line(
 <section id="the-complete-program" class="level1 activity">
 <h1>The Complete Program</h1>
 <p>Your final program should look something like this!</p>
-<pre class="{.language-python}"><code>from tkinter import *
+<pre class="language-python"><code>from tkinter import *
     import random
 
     main = Tk()
