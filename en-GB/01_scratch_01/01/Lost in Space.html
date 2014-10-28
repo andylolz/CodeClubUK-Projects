@@ -29,14 +29,17 @@
 <p>This project is in Beta. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
 <!--
 h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
 </section>
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
 <p>You are going to learn how to program your own animation!</p>
-<p><img src="space-final.png" alt="screenshot" /></p>
+<div class="scratch-preview">
+    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26818098/?autostart=true" frameborder="0"></iframe>
+    <img src="space-final.png">
+</div>
 </section>
 <section id="step-1-sprites" class="level1 activity">
 <h1>Step 1: Sprites</h1>
@@ -73,7 +76,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <h2>Save your project</h2>
 <p>You should save your work regularly, so that you don’t lose it. First, give your program a name, by typing one into the text box above the stage. You can then click ‘File’ and then ‘Save now’ to save your project.</p>
 <p><img src="space-save.png" alt="screenshot" /></p>
-<p>If you’re using Scratch online, clicking ‘Save’ adds your program to your ‘stuff’, which is an online folder that you can access from anywhere, even from home. You can access your stuff by clicking File, and then clicking ‘Go to My Stuff’.</p>
+<p>If you’re using Scratch online, clicking ‘Save’ adds your program to your ‘stuff’, which is an online folder that you can access from anywhere, even from home. You can access your stuff by clicking ‘File’, and then clicking ‘Go to My Stuff’.</p>
 <p><img src="space-stuff.png" alt="screenshot" /></p>
 <p>This shows you a list of all your projects. Click ‘See inside’ to continue programming your animation.</p>
 </section>
@@ -89,11 +92,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p>Change the numbers in the code blocks, so that the code is exactly the same as in the image above. Here is the code that you should add:</p>
 <p><img src="d792667c8019a1792e1be19d98c7c6e4574ceab0.png" alt="    point towards [Earth v]
     glide (1) secs to x:(0) y: (0)" /></p>
-<p>To make the <code class="blockblue">point towards Earth</code> block, you’ll have to drag on the block, and then click the down arrow to select your ‘Earth’ sprite.</p>
+<p>To make the <code class="blockmotion">point towards Earth</code> block, you’ll have to drag on the block, and then click the down arrow to select your ‘Earth’ sprite.</p>
 <p><img src="space-select.png" alt="screenshot" /></p></li>
 <li><p>If you click on the code blocks to run the code, you should see the spaceship turn and move towards the centre of the stage.</p>
 <p><img src="space-animate-stage.png" alt="screenshot" /></p>
-<p>The screen position <code class="blockblue">x:(0) y:(0)</code> is the center of the stage. A position like <code class="blockblue">x:(-150) y:(-150)</code> is towards the bottom-left of the stage, and a position like <code class="blockblue">x:(150) y:(150)</code> is near the top-right.</p>
+<p>The screen position <code class="blockmotion">x:(0) y:(0)</code> is the center of the stage. A position like <code class="blockmotion">x:(-150) y:(-150)</code> is towards the bottom-left of the stage, and a position like <code class="blockmotion">x:(150) y:(150)</code> is near the top-right.</p>
 <p><img src="space-xy.png" alt="screenshot" /></p>
 <p>If you need to know the coordinates of a position on the stage, move the mouse to the position you want and make a note of the cordinates, which are displayed below the stage.</p>
 <p><img src="space-coordinates.png" alt="screenshot" /></p></li>
@@ -104,8 +107,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
     wait (1) secs
     point towards [Earth v]
     glide (1) secs to x:(0) y: (0)" /></p>
-<p>You’ll find the <code class="blockorange">wait (1) secs</code> block by clicking on the orange ‘Control’ blocks section.</p></li>
-<li><p>Your spaceship now moves <em>every</em> time you click the flag. Try it!</p></li>
+<p>You’ll find the <code class="blockcontrol">wait (1) secs</code> block by clicking on the orange <code class="blockcontrol">Control</code> blocks section.</p></li>
+<li><p>Your spaceship now moves <em>every</em> time you run your code. Try it!</p></li>
 <li><p>You can also attach your animation code to an ‘event’. This means that the code will run when something happens, such as when the green flag is clicked, a key is pressed or a sprite is clicked.</p>
 <p><img src="space-events.png" alt="screenshot" /></p>
 <p>Drag an event onto the start of your code, so that your animation starts when the green flag is clicked. This is how your code should look:</p>
@@ -123,7 +126,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <h2>Challenge: Improving your animation</h2>
 <p>Can you change the numbers in your animation code, so that:</p>
 <ul>
-<li>The spaceship moves until it touches the Earth?<br /></li>
+<li>The spaceship moves until it touches the Earth?</li>
 <li>The spaceship moves more slowly towards the Earth?</li>
 </ul>
 <p>You’ll need to change the numbers in this block:</p>
@@ -138,8 +141,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Another way of animating the spaceship is to tell it to move a small amount (say 4 steps), lots of times. Delete the <code class="blockblue">glide</code> block from your code, by right-clicking on the block and clicking ‘delete’. You can also delete code by dragging it off the script area, back into the code blocks area.</p>
-<p>Once you’ve removed your code, and this code instead:</p>
+<li><p>Another way of animating the spaceship is to tell it to move a small amount (say 4 steps), lots of times. Delete the <code class="blockmotion">glide</code> block from your code, by right-clicking on the block and clicking ‘delete’. You can also delete code by dragging it off the script area, back into the code blocks area.</p></li>
+<li><p>Once you’ve removed your code, and this code instead:</p>
 <p><img src="d10e44982a83fda63956959cd59f78a4491fcde6.png" alt="    when FLAG clicked
     point in direction (0 v)
     go to x:(-150) y:(-150)
@@ -148,8 +151,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
     repeat (100)
         move (4) steps
     end" /></p></li>
-<li><p>The <code class="blockorange">repeat</code> block is used to repeat something lots of times, and is also known as a ‘loop’. If you click the flag to try out this new code, you’ll see that it does pretty much the same thing as before.</p></li>
-<li><p>Using a loop to move the spaceship means that you can add more code inside the <code class="blockorange">repeat (100)</code> loop to do interesting things. Add the <code class="blockpurple">change [color] effect by (25)</code> block into the loop (from the ‘Looks’ section), to repeatedly change the colour of the spaceship as it moves:</p>
+<li><p>The <code class="blockcontrol">repeat</code> block is used to repeat something lots of times, and is also known as a ‘loop’. If you click the flag to try out this new code, you’ll see that it does pretty much the same thing as before.</p></li>
+<li><p>Using a loop to move the spaceship means that you can add more code inside the <code class="blockcontrol">repeat (100)</code> loop to do interesting things. Add the <code class="blocklooks">change color effect by 25</code> block into the loop (from the ‘Looks’ section), to repeatedly change the colour of the spaceship as it moves:</p>
 <p><img src="09eb92ccbd3b5fb738429709e75d02293bd14f3e.png" alt="    when FLAG clicked
     point in direction (0 v)
     go to x:(-150) y:(-150)
@@ -184,7 +187,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Let’s add monkey to your animation, that’s lost in space! Start by adding in the monkey sprite from the library.</p>
+<li><p>Let’s add monkey to your animation, who’s lost in space! Start by adding in the monkey sprite from the library.</p>
 <p><img src="space-monkey.png" alt="screenshot" /></p></li>
 <li><p>If you click on your new monkey sprite and then click ‘Costumes’, you can edit how the monkey looks. Click the ‘Ellipse’ tool, and draw a white space helmet around the monkey’s head.</p>
 <p><img src="space-monkey-edit.png" alt="screenshot" /></p></li>
@@ -194,7 +197,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
         turn right (1) degrees
     end" /></p>
 <p><img src="space-monkey-loop.png" alt="screenshot" /></p>
-<p>The <code class="blockorange">forever</code> block is another loop, but this time one that never ends. You’ll have to click the stop button (next to the flag) to end this animation.</p></li>
+<p>The <code class="blockcontrol">forever</code> block is another loop, but this time one that never ends. You’ll have to click the stop button (next to the flag) to end this animation.</p></li>
 <li><p>You can also combine loops. Add a ‘star’ sprite to your animation, and add this code to it:</p>
 <p><img src="eb249e8368ee8ffcd3b038c458efafda20121d76.png" alt="    when FLAG clicked
     forever
@@ -206,7 +209,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
       end
     end" /></p>
 <p><img src="space-star.png" alt="screenshot" /></p></li>
-<li><p>Click the flag to test out this star animation. What does this code do? Well, the star is made slightly bigger 20 times, and then made slightly smaller 20 times, back to it’s original size. These 2 loops are inside a <code class="blockorange">forever</code> loop, so the animation keeps repeating.</p></li>
+<li><p>Click the flag to test out this star animation. What does this code do? Well, the star is made slightly bigger 20 times, and then made slightly smaller 20 times, back to it’s original size. These 2 loops are inside a <code class="blockcontrol">forever</code> loop, so the animation keeps repeating.</p></li>
 </ul>
 </section>
 <section id="save-your-project-3" class="level2 save">
@@ -219,7 +222,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 </section>
 <section id="save-your-project-4" class="level2 save">
 <h2>Save your project</h2>
-<p>Well done! You’ve now completed your first Scratch project. If you are using the online editor, you can let others see your animation by clicking ‘Share’ in the top-right of the screen!</p>
+<p>Well done! You’ve now completed your first Scratch project. If you are using the online editor, you can let others see your animation by clicking ‘Share’ in the top-right of the Scratch editor!</p>
 <p><img src="space-share.png" alt="screenshot" /></p>
 </section>
 </section>

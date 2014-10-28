@@ -29,14 +29,17 @@
 <p>This project is in Beta. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
 <!--
 h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
 </section>
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
 <p>You are going to make a balloon-popping game!</p>
-<p><img src="balloons-final.png" alt="screenshot" /></p>
+<div class="scratch-preview">
+    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26745384/?autostart=true" frameborder="0"></iframe>
+    <img src="balloons-final.png">
+</div>
 </section>
 <section id="step-1-animating-a-balloon" class="level1 activity">
 <h1>Step 1: Animating a balloon</h1>
@@ -57,7 +60,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><p>Test out your balloon. Does it move too slowly? Change the numbers in your code if you want to speed it up a bit.</p></li>
 <li><p>Did you also notice that your balloon flips as it moves around the screen?</p>
 <p><img src="balloons-flip.png" alt="screenshot" /></p>
-<p>Balloons don’t move like this! To fix this, click on the balloon sprite icon, and then click the blue ‘i’ information icon.</p>
+<p>Balloons don’t move like this! To fix this, click on the balloon sprite icon, and then click the blue <code class="blockmotion">i</code> information icon.</p>
 <p><img src="balloons-info.png" alt="screenshot" /><br />In the ‘rotation style’ section, click the dot to stop the balloon rotating.</p>
 <p><img src="balloons-lock.png" alt="screenshot" /></p></li>
 <li><p>Test your program again to see if the problem is fixed.</p></li>
@@ -85,7 +88,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><p>You could even use a random number to choose a random balloon colour each time:</p>
 <p><img src="3c3d78e74f25298158e196236b136c449618fd55.png" alt="    change [colour v] effect by (pick random (0) to (200))" /></p>
 <p><img src="balloons-colour.png" alt="screenshot" /></p>
-<p>What happens if this code is put at the start of your program? Does anything different happen if you put this code <em>inside</em> the <code class="blockorange">forever</code> loop? Which do you prefer?</p></li>
+<p>What happens if this code is put at the start of your program? Does anything different happen if you put this code <em>inside</em> the <code class="blockcontrol">forever</code> loop? Which do you prefer?</p></li>
 </ul>
 </section>
 <section id="save-your-project-1" class="level2 save">
@@ -121,13 +124,13 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p><img src="b2b0c8ccad0f799890f8e54a7162a45ef8031aff.png" alt="    when this sprite clicked
     switch costume to [burst v]
     play sound [pop v]" /></p></li>
-<li><p>Test out your project. Can you pop the balloon? Does it work as you expected? You’ll need to improve this code, so that when the balloon is clicked, it shows the ‘burst’ costume for a short time, and then disappears. You can make all of this happen by changing your balloon clicked code to this:</p>
+<li><p>Test out your project. Can you pop the balloon? Does it work as you expected? You’ll need to improve this code, so that when the balloon is clicked, it shows the ‘burst’ costume for a short time, and then disappears. You can make all of this happen by changing your balloon <code class="blockevents">when sprite clicked</code> code to this:</p>
 <p><img src="f498a457d2413e65c16fa7a0db65e5f8a04d832f.png" alt="    when this sprite clicked
     switch costume to [burst v]
     play sound [pop v]
     wait (0.3) secs
     hide" /></p></li>
-<li><p>Now that you’re hiding the balloon when it’s clicked, you’ll also need to add a <code class="blockpurple">show</code> block to the start of the <code class="blockred">when flag clicked</code> code.</p></li>
+<li><p>Now that you’re hiding the balloon when it’s clicked, you’ll also need to add a <code class="blocklooks">show</code> block to the start of the <code class="blockevents">when flag clicked</code> code.</p></li>
 <li><p>Try popping a balloon again, to check that it works properly.</p></li>
 </ul>
 </section>
@@ -142,13 +145,13 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>To keep the player’s score, you need a place to put it. A <em>variable</em> is a place to store data that can change, like a score.</p>
-<p>To create a new variable, click on the ‘Scripts’ tab, select ‘data’ and then click ‘Make a Variable’.</p>
+<p>To create a new variable, click on the ‘Scripts’ tab, select <code class="blockdata">Data</code> and then click ‘Make a Variable’.</p>
 <p><img src="balloons-score.png" alt="screenshot" /></p>
-<p>Type ‘score’ as the name of the variable, and click ‘OK’ to create it. You’ll then see lots of code blocks that can be used with your ‘score’ variable.</p>
+<p>Type ‘score’ as the name of the variable, and click ‘OK’ to create it. You’ll then see lots of code blocks that can be used with your <code class="blockdata">score</code> variable.</p>
 <p><img src="balloons-variable.png" alt="screenshot" /></p>
 <p>You’ll also see the score in the top-left of the stage.</p>
 <p><img src="balloons-stage-score.png" alt="screenshot" /></p></li>
-<li><p>When a new game is started (by clicking the flag), you want to set the player’s score to 0. Add this code to the top of the balloon’s <code class="blockred">when flag clicked</code> code:</p>
+<li><p>When a new game is started (by clicking the flag), you want to set the player’s score to 0. Add this code to the top of the balloon’s <code class="blockevents">when flag clicked</code> code:</p>
 <p><img src="19ec795242f7c718fa32037e3e42beef34e17409.png" alt="set [score v] to [0]" /></p></li>
 <li><p>Whenever a balloon is popped, you need to add 1 to the score:</p>
 <p><img src="a7a53cbebb2e3dfd241ab8765c7e8e24af3c6c68.png" alt="    when this sprite clicked
@@ -174,9 +177,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p><img src="balloons-duplicate.png" alt="screenshot" /></p>
 <p>Duplicating your balloon sprite is OK if you only want a few, but what if you need 20? or 100? or 1000? Are you really going to click ‘duplicate’ that many times?</p>
 <p>Another way of getting lots of balloons is to <em>clone</em> the balloon sprite.</p>
-<p>Drag your balloon <code class="blockred">when flag clicked</code> code (except the <code class="blockred">score</code> block) off of the event (don’t delete it), and instead add code to create 20 balloon clones:</p>
+<p>Drag your balloon <code class="blockevents">when flag clicked</code> code (except the <code class="blockdata">score</code> block) off of the event (don’t delete it), and instead add code to create 20 balloon clones:</p>
 <p><img src="balloons-clone-1.png" alt="screenshot" /></p></li>
-<li><p>You can now attach the code you’ve just removed to the <code class="blockred">when I start as a clone</code> event (adding a <code class="blockpurple">show</code> block at the top), so that your balloon code now looks like this:</p>
+<li><p>You can now attach the code you’ve just removed to the <code class="blockevents">when I start as a clone</code> event (adding a <code class="blocklooks">show</code> block at the top), so that your balloon code now looks like this:</p>
 <p><img src="balloons-clone-2.png" alt="screenshot" /></p>
 <p>Now when the flag is clicked, your main balloon sprite will hide and then clone itself 20 times. When each of these 20 clones is started, they will each bounce around the screen randomly, just as they did before.</p></li>
 <li><p>Test your project to see if you can pop the 20 balloons!</p></li>
@@ -196,8 +199,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p><img src="balloons-time.png" alt="screenshot" /></p></li>
 <li><p>This is how the timer should work:</p>
 <ul>
-<li>The timer should start at 10 seconds;<br /></li>
-<li>The timer should count down every second;<br /></li>
+<li>The timer should start at 10 seconds;</li>
+<li>The timer should count down every second;</li>
 <li>The game should stop when the timer gets to 0.</li>
 </ul>
 <p>Here’s the code to do this, which you can add to your <em>stage</em>:</p>
@@ -208,17 +211,17 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
         change [time v] by (-1)
     end
     stop [all v]" /></p>
-<p>To add the <code>repeat until time = 0</code> code, first you’ll need to drag a green <code class="blockgreen">=</code> block, onto your <code class="blockorange">repeat until</code> block:</p>
+<p>To add the <code class="blockcontrol">repeat until</code><code class="blockdata">time</code><code class="blockoperators">= 0</code> code, first you’ll need to drag a green <code class="blockoperators">=</code> block, onto your <code class="blockcontrol">repeat until</code> block:</p>
 <p><img src="balloons-timer-1.png" alt="screenshot" /></p>
-<p>You can then drag your <code class="blockred">time</code> variable onto the <code class="blockgreen">=</code> block:</p>
+<p>You can then drag your <code class="blockdata">time</code> variable onto the <code class="blockoperators">=</code> block:</p>
 <p><img src="balloons-timer-2.png" alt="screenshot" /></p></li>
 <li><p>Drag your ‘time’ variable display to the right side of the stage. You can also right-click on the variable display and choose ‘large readout’ to change how the time is displayed.</p>
 <p><img src="balloons-readout.png" alt="screenshot" /></p></li>
 <li><p>Test your game. How many points can you score? If your game is too easy, you can:</p>
 <ul>
-<li>Give the player less time;<br /></li>
-<li>Have more balloons;<br /></li>
-<li>Make the balloons move faster;<br /></li>
+<li>Give the player less time;</li>
+<li>Have more balloons;</li>
+<li>Make the balloons move faster;</li>
 <li>Make the balloons smaller.</li>
 </ul>
 <p>Test your game a few times until you’re happy that it’s the right level of difficulty.</p></li>
@@ -233,10 +236,10 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p><img src="balloons-objects.png" alt="screenshot" /></p>
 <p>You’ll need to think about the objects you’re adding. Think about:</p>
 <ul>
-<li>How many will there be?<br /></li>
-<li>How big is it? How does it move?<br /></li>
-<li>How many points will you score (or lose) for clicking it?<br /></li>
-<li>Will it moves faster or slower than the balloons?<br /></li>
+<li>How many will there be?</li>
+<li>How big is it? How does it move?</li>
+<li>How many points will you score (or lose) for clicking it?</li>
+<li>Will it moves faster or slower than the balloons?</li>
 <li>What will it look/sound like when it’s been clicked?</li>
 </ul>
 <p>If you need help adding another object, you can reuse the steps above!</p>
