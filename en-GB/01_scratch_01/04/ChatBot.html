@@ -29,14 +29,17 @@
 <p>This project is in Beta. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
 <!--
 h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
 </section>
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
 <p>You are going to learn how to program your own talking robot!</p>
-<p><img src="chatbot-final.png" alt="screenshot" /></p>
+<div class="scratch-preview">
+    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=true" frameborder="0"></iframe>
+    <img src="chatbot-final.png">
+</div>
 </section>
 <section id="step-1-your-chatbot" class="level1 activity">
 <h1>Step 1: Your chatbot</h1>
@@ -45,8 +48,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <ul>
 <li><p>Before you start making your chatbot, you need to decide on their personality.</p>
 <ul>
-<li>What is their name?<br /></li>
-<li>Where do they live?<br /></li>
+<li>What is their name?</li>
+<li>Where do they live?</li>
 <li>Are they happy? serious? funny? shy? friendly?</li>
 </ul></li>
 <li><p>Start a new project, and delete the cat sprite, so that your project is empty.</p></li>
@@ -74,11 +77,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p><img src="8e2aee42822915eafead46c2ca2b2a2240c1c9c2.png" alt="    when this sprite clicked
     ask [Hey! What&#39;s your name?] and wait
     say &lt;join [Hi] (answer)&gt; for (2) secs" /></p>
-<p>To create the last block, you’ll need to first drag on a green <code class="blockgreen">join</code> block, and drag it on to the <code class="blockpurple">say</code> block.</p>
+<p>To create the last block, you’ll need to first drag on a green <code class="blockoperators">join</code> block, and drag it on to the <code class="blocklooks">say</code> block.</p>
 <p><img src="chatbot-join.png" alt="screenshot" /></p>
-<p>You can then change the text “hello” to say “Hi”, and drag the light blue <code class="blocklightblue">answer</code> block (from the ‘Sensing’ section) onto the text “world”.</p>
+<p>You can then change the text “hello” to say “Hi”, and drag the light blue <code class="blocksensing">answer</code> block (from the ‘Sensing’ section) onto the text “world”.</p>
 <p><img src="chatbot-answer.png" alt="screenshot" /></p></li>
-<li><p>Test out this new program. Does it work as you expected? Can you fix any problems that you can see? You can try adding in a space somewhere!</p></li>
+<li><p>Test out this new program. Does it work as you expected? Can you fix any problems that you can see? (Hint: you can try adding in a space somewhere!)</p></li>
 <li><p>It may be that you want to store the user’s name in a variable, so that you can use it again later. Create a new variable called ‘name’. If you’ve forgotten how to do this, the previous ‘Balloons’ project will help you.</p></li>
 <li><p>Once you’ve created your new variable, make sure that your chatbot’s code looks like this:</p>
 <p><img src="d9ce2c3f13fac0bbe6695a0bcbfc64785cb71915.png" alt="    when this sprite clicked
@@ -93,8 +96,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <section id="save-your-project-1" class="level2 save">
 <h2>Save your project</h2>
 </section>
-<section id="challeng-more-questions" class="level2 chalenge">
-<h2>Challeng: More questions</h2>
+<section id="challenge-more-questions" class="level2 challenge">
+<h2>Challenge: More questions</h2>
 <p>Program your chatbot to ask another question. Can you store their answer in a variable?</p>
 <p><img src="chatbot-question.png" alt="screenshot" /></p>
 </section>
@@ -118,8 +121,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
         say [That&#39;s great to hear!] for (2) secs
     end" /></p>
 <p>Notice that now you’ve stored the user’s name in a variable, you can use it as much as you like.</p></li>
-<li><p>To test this program properly, you’ll need to test it twice - once typing ‘no’ as your answer, and once typing ‘yes’. You should only get a response from your chatbot <code class="blockorange">if</code> you answer ‘yes’.</p></li>
-<li><p>The trouble with your chatbot is that it doesn’t give a reply if the user answers ‘no’. You can fix this, by changing the <code class="blockorange">if</code> block to an <code class="blockorange">if/else</code> block, so that your code now looks like this:</p>
+<li><p>To test this program properly, you’ll need to test it twice - once typing ‘no’ as your answer, and once typing ‘yes’. You should only get a response from your chatbot <code class="blockcontrol">if</code> you answer ‘yes’.</p></li>
+<li><p>The trouble with your chatbot is that it doesn’t give a reply if the user answers ‘no’. You can fix this, by changing the <code class="blockcontrol">if</code> block to an <code class="blockcontrol">if/else</code> block, so that your code now looks like this:</p>
 <p><img src="1c759e65c33e4ff5c64e317cdb10411a71b76296.png" alt="    when this sprite clicked
     ask [Hey! What&#39;s your name?] and wait
     set [name v] to (answer)
@@ -130,9 +133,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
     else
         say [Oh no!] for (2) secs
     end" /></p></li>
-<li><p>If you test your code, you’ll now see that you get a response when you answer ‘yes’ or ‘no’. Your chatbot should reply with “That’s great to hear!” when you answer ‘yes’, but will reply with “Oh no!” if you type anything other than yes (<code class="blockorange">else</code> means ‘otherwise’).</p>
+<li><p>If you test your code, you’ll now see that you get a response when you answer ‘yes’ or ‘no’. Your chatbot should reply with “That’s great to hear!” when you answer ‘yes’, but will reply with “Oh no!” if you type anything other than yes (<code class="blockcontrol">else</code> means ‘otherwise’).</p>
 <p><img src="chatbot-else.png" alt="screenshot" /></p></li>
-<li><p>You can put any code inside an <code class="blockorange">if</code> or <code class="blockorange">else</code> block, not just code to make your chatbot speak. For example, you can change the chatbot’s costume to match the response.</p>
+<li><p>You can put any code inside an <code class="blockcontrol">if</code> or <code class="blockcontrol">else</code> block, not just code to make your chatbot speak. For example, you can change the chatbot’s costume to match the response.</p>
 <p>If you have a look at your chatbot’s costumes, you may see that there is more than one. (If not, you can always add more yourself!)</p>
 <p><img src="chatbot-costumes.png" alt="screenshot" /></p>
 <p>You can use these costumes as part of your chatbot’s response, by using this code:</p>
@@ -178,8 +181,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
     if ((answer) = [yes]) then
         switch backdrop to [bedroom2 v]
     end" /></p></li>
-<li><p>You also need to make sure that your chatbot is outside when you start talking to it. Add this code to the top of your chatbot code:</p>
-<p><img src="c3eb6e7aa6446c0506244ef62113203a2d5623f8.png" alt="    switch to background [space v]" /></p></li>
+<li><p>You also need to make sure that your chatbot is outside when you start talking to it. Add this block to the top of your chatbot code:</p>
+<p><img src="b0dd681577464e65ef40e3aabe6a9d605ae8285a.png" alt="    switch backdrop to [space v]" /></p></li>
 <li><p>Test your program, and answer ‘yes’ when asked if you want to go home. You should see that the chatbot’s location has changed.</p>
 <p><img src="chatbot-backdrop.png" alt="screenshot" /></p></li>
 <li><p>Does your chatbot change location if you type ‘no’? What about if you type ‘I’m not sure’?</p></li>
