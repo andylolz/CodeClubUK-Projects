@@ -186,9 +186,9 @@ if &lt;(racing) = [1]&gt;
 <li><strong>Try to add a booster</strong> that you can use once each race that moves the parrot or the lion <strong>30 steps in 1 go.</strong></li>
 <li><strong>Add a new costume</strong> with fire coming out behind for each sprite and make it appear when the boost is pressed.</li>
 <li><p><strong>Create another sound</strong> that the sprite will make when the boost is pressed.</p>
-<p><img src="256b5cb97fdc3a28e56d73a0234827c8e539be07.png" alt="when [p v] key pressed
+<p><img src="d26f602d047e4fdcfe0a22ebdc1cfe13320f8576.png" alt="when [p v] key pressed
 if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
-    switch to costume [parrot-boost v]
+    switch costume to [parrot-boost v]
     set [boosted v] to [1]
     move (30) steps
     if &lt;touching [edge v]?&gt;
@@ -213,7 +213,7 @@ if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
 <li>Give the custom block a name by typing <strong>“finished”</strong> into the pink box. Then click OK.</li>
 <li>You’ll now see a <code class="blockpurple">define finished</code> block appear in the scripts window. Drag it to a clear area.</li>
 <li><p>Detach the <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code><code class="blockyellow">then</code> block and drag it to the <code class="blockpurple">define finished</code> block.</p>
-<p><img src="b196b7010a36fecd3cbab66b871d390f80197a46.png" alt="define finished
+<p><img src="2f779a9937cd3d329212b9b2ec6948fb64488150.png" alt="define finished
     if &lt;touching [edge v]?&gt;
         set (racing) to [0]
         play sound [recording1 v]
@@ -222,7 +222,7 @@ if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
 
 when [q v] key pressed
     if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
-        switch to costume [parrot-boost v]
+        switch costume to [parrot-boost v]
         set [boosted v] to [1]
         move (4) steps
 
