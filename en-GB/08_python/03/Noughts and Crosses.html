@@ -46,7 +46,7 @@ _|_|_
 <li>Open up IDLE, create a New File, and save it as ‘xox.py’</li>
 </ul>
 <p>Write the following code:</p>
-<pre class="{.language-python}"><code>
+<pre class="language-python"><code>
 from tkinter import *
 
 main = Tk()
@@ -112,7 +112,7 @@ mainloop()</code></pre>
      V
    down</code></pre>
 <p>We want to draw lines from A to C, B to D, M to O, and N to P.</p>
-<pre class="{.language-python}"><code>c.create_line(200, 0, 200, 600) # A to C
+<pre class="language-python"><code>c.create_line(200, 0, 200, 600) # A to C
 c.create_line(400, 0, 400, 600) # B to D
 
 c.create_line(0, 200, 600, 200) # M to O
@@ -129,7 +129,7 @@ c.create_line(0, 400, 600, 400) # N to P
 <ul>
 <li>In the same file, let’s add a new function to draw when you click the mouse!</li>
 </ul>
-<pre class="{.language-python}"><code>
+<pre class="language-python"><code>
 from tkinter import *
 
 main = Tk()
@@ -151,10 +151,10 @@ c.bind(&quot;&lt;Button-1&gt;&quot;, click)
 mainloop()
 </code></pre>
 <ul>
-<li>Run your code, and click on the grid, what happens? You should see a circle in the centre of the grid.</li>
+<li>Run your code, and click on the grid, what happens? You should see a circle in the centre of the grid.<br /></li>
 <li>Let’s edit the code, so it will draw where you click. For this we’ll need to take the mouse position, and work out which grid square it is in, and change the <code>click</code> function</li>
 </ul>
-<pre class="{.language-python}"><code>
+<pre class="language-python"><code>
 from tkinter import *
 
 main = Tk()
@@ -194,7 +194,7 @@ mainloop()
 <ul>
 <li>In the same file, let’s add some code to draw an X, then an O, then an X, …</li>
 </ul>
-<pre class="{.language-python}"><code>
+<pre class="language-python"><code>
 from tkinter import *
 
 main = Tk()
@@ -237,7 +237,7 @@ c.bind(&quot;&lt;Button-1&gt;&quot;, click)
 mainloop()
 </code></pre>
 <ul>
-<li>Run your program, try click on a grid, it should draw a O, click elsewhere it should draw an X We’ve used a new feature of python, <code>global</code> to let us change the variable <code>shape</code> in the function <code>click</code>. If you change variables defined outside of a function, then you have to use <code>global</code>.</li>
+<li>Run your program, try click on a grid, it should draw a O, click elsewhere it should draw an X We’ve used a new feature of python, <code>global</code> to let us change the variable <code>shape</code> in the function <code>click</code>. If you change variables defined outside of a function, then you have to use <code>global</code>.<br /></li>
 <li>What happens if you click on the same square twice? This is because our code doesn’t keep track of what has been drawn, or where players have moved. We will have write some more code to fix this.</li>
 </ul>
 </section>
@@ -250,7 +250,7 @@ mainloop()
 <ul>
 <li>In the same file,</li>
 </ul>
-<pre class="{.language-python}"><code>
+<pre class="language-python"><code>
 from tkinter import *
 
 main = Tk()
@@ -317,7 +317,7 @@ mainloop()
 <ul>
 <li>In the same file, we’re going to introduce a new function <code>winner</code>, and call it to check if the game has been won The completed code looks like this!</li>
 </ul>
-<pre class="{.language-python}"><code>
+<pre class="language-python"><code>
 from tkinter import *
 
 main = Tk()
@@ -401,9 +401,9 @@ mainloop()
 <ul>
 <li><p>Try playing the game and winning, can you make any more moves? We have four checks in <code>winner</code></p>
 <ul>
-<li>Check each row for three X’s or O’s</li>
-<li>Check each column for three X’s or O’s</li>
-<li>Check the diagonal from left to right</li>
+<li>Check each row for three X’s or O’s<br /></li>
+<li>Check each column for three X’s or O’s<br /></li>
+<li>Check the diagonal from left to right<br /></li>
 <li>Check the diagonal from right to left.</li>
 </ul></li>
 </ul>

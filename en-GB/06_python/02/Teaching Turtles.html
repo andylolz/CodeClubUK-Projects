@@ -31,7 +31,7 @@
       
 <section id="introduction" class="level1 intro">
 <h1>Introduction:</h1>
-<p>In this project, you’ll learn how <em>functions</em> can make writing your programs easier .</p>
+<p>In this project, you’ll learn more about drawing with the turtle, and how <em>functions</em> can make writing your programs easier.</p>
 </section>
 <section id="step-1-drawing-stars" class="level1 activity">
 <h1>Step 1: Drawing stars</h1>
@@ -39,7 +39,7 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Let’s start by using what you already know about turtles to draw a star. Run this program, but make sure <em>not</em> to name the program <code>turtle.py</code> - any other name is fine!</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="language-python"><code>from turtle import *
 
 #this will draw a light grey star on a dark blue background
 color(&quot;WhiteSmoke&quot;)
@@ -62,7 +62,7 @@ done()</code></pre>
 <p>The only new commands here are <code>begin_fill()</code> and <code>end_fill()</code>. These commands are used to colour in a shape. Also notice that there is no pen line between the star and the turtle in the image above, as you have used the <code>penup()</code> function to stop the turtle drawing.</p>
 <p>Also, you might have noticed the names of some <a href="http://www.w3schools.com/html/html_colornames.asp">new colours</a>! You can also use hex colour codes, just like you did when making web pages.</p></li>
 <li><p>If you wanted to draw 3 stars at different positions around the screen, then you can define your own new function called <code>drawStar()</code>, and then just call this new function 3 times:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="language-python"><code>from turtle import *
 
 #a function for drawing a star
 #&#39;def&#39; means &#39;define&#39;
@@ -109,15 +109,15 @@ done()</code></pre>
 <h1>Step 2: Passing data to functions</h1>
 <p>You now have a function for drawing stars, but what if you wanted to draw lots of stars that are different sizes? One way would be to create lots of different functions, like <code>drawBigStar()</code>, <code>drawMediumStar()</code> and <code>drawSmallStar()</code>.</p>
 <p>A better way is to <em>pass data</em> to your <code>drawStar()</code> function, to tell it what size star you want! You’ve already used lots of functions that receive data before, such as:</p>
-<pre class="{.language-python}"><code>forward(100)</code></pre>
+<pre class="language-python"><code>forward(100)</code></pre>
 <p>…which tells the <code>forward</code> function to move 100 pixels, and:</p>
-<pre class="{.language-python}"><code>print(&quot;Hello&quot;)</code></pre>
+<pre class="language-python"><code>print(&quot;Hello&quot;)</code></pre>
 <p>…which tells the <code>print</code> function to print “Hello” to the screen.</p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Here’s a program with a <code>drawStar()</code> function that can draw stars of different sizes, using whatever number is passed to it.</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="language-python"><code>from turtle import *
 
 #a function for drawing a star of a particular size
 def drawStar(starSize):
@@ -147,7 +147,7 @@ done()</code></pre>
 <p>When your program runs the line <code>drawStar(50)</code>, the number <code>50</code> is passed to the <code>drawStar()</code> function, and so the value of <code>starSize</code> is set to <code>50</code>. This means that the line <code>forward(starSize)</code> draws a line 50 pixels long.</p>
 <p><img src="sky-parameter-passing.png" alt="screenshot" /></p></li>
 <li><p>You can pass as much data to your <code>drawStar()</code> function as you want. For example, you could also pass the colour of the star you want to draw:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="language-python"><code>from turtle import *
 
 #a function for drawing a star of a particular size
 def drawStar(starSize, starColour):
@@ -195,7 +195,7 @@ done()</code></pre>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Run this program, which moves the turtle to a new position, and then draws a white star:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="language-python"><code>from turtle import *
 
 #a function for drawing a star of a particular size
 def drawStar(starSize, starColour):
@@ -224,7 +224,7 @@ done()</code></pre>
 <p>The <code>setpos()</code> function moves the turtle to whatever x and y coordinates are passed to it. In the program above, the code <code>setpos(200 , 200)</code> moves the turtle to the point x=200, y=200 on the screen. What would happen if you changed the numbers passed to the <code>setpos()</code> function?</p>
 <p><img src="sky-xy.png" alt="screenshot" /></p></li>
 <li><p>You’ll be using code to move to a random location a lot, so let’s define another function called <code>moveToRandomLocation()</code>, which, well, moves the turtle to a random location (obviously)!</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="language-python"><code>from turtle import *
 from random import *
 
 #a function for moving the turtle to a random location
@@ -269,7 +269,7 @@ done()</code></pre>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>It would be great if we could add a galaxy of small multi-coloured stars to our drawing. As we already have a function to draw stars, we can create another function called <code>drawGalaxy()</code> that makes use of the <code>drawStar()</code> function that we already have:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="language-python"><code>from turtle import *
 from random import *
 
 #a function for moving the turtle to a random location
@@ -322,7 +322,7 @@ done()</code></pre>
 <p>Calling <code>drawGalaxy(40)</code> 3 times means that 3 new galaxies are drawn, each containing 40 stars. For each galaxy, the <code>drawStar()</code> function is run 40 times, each time moving a small random amount before drawing a really small random colour star.</p>
 <p>The code <code>speed(11)</code> has also been added to speed up the turtle!</p></li>
 <li><p>You can also draw constellations made up of stars, joined together with white lines. Again, this is really easy to do, because you already have the function to draw stars!</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="language-python"><code>from turtle import *
 from random import *
 
 #a function for moving the turtle to a random location

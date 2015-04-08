@@ -40,11 +40,11 @@
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ol>
-<li>Start a new Scratch project.</li>
-<li>Select the Stage, then select the Stage’s Backdrop tab. Import the<br />background <strong>Nature/underwater3</strong> using <code class="blocklightgrey">choose background from library</code>. Finally, remove <strong>backdrop1</strong>.</li>
-<li>Change the name of Sprite1 to ‘Hungry Fish’ by clicking on the blue ‘i’ symbol.</li>
-<li>Import Hungry Fish’s costume, <strong>resources/hungry-fish.png</strong> then remove its existing <strong>costume1</strong> and <strong>costume2</strong>.</li>
-<li>Click on the blue ‘<strong>i</strong>’ symbol again, and make sure the sprite can only flip left-right.</li>
+<li>Start a new Scratch project.<br /></li>
+<li>Select the Stage, then select the Stage’s Backdrop tab. Import the<br />background <strong>Nature/underwater3</strong> using <code class="blocklightgrey">choose background from library</code>. Finally, remove <strong>backdrop1</strong>.<br /></li>
+<li>Change the name of Sprite1 to ‘Hungry Fish’ by clicking on the blue ‘i’ symbol.<br /></li>
+<li>Import Hungry Fish’s costume, <strong>resources/hungry-fish.png</strong> then remove its existing <strong>costume1</strong> and <strong>costume2</strong>.<br /></li>
+<li>Click on the blue ‘<strong>i</strong>’ symbol again, and make sure the sprite can only flip left-right.<br /></li>
 <li>Now create a script for Hungry Fish to follow the mouse around the sea like this:</li>
 </ol>
 <p><img src="89a23fdce94f6c4c0f3b2bd2b5ef30b3bbea425f.png" alt="when FLAG clicked
@@ -77,8 +77,8 @@
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ol>
-<li>Create a new sprite from the library, using <strong>Animals/starfish</strong>.</li>
-<li>Use the <code class="blocklightgrey">Shrink</code> sprite tool (above the Stage) to make the sprite smaller.</li>
+<li>Create a new sprite from the library, using <strong>Animals/starfish</strong>.<br /></li>
+<li>Use the <code class="blocklightgrey">Shrink</code> sprite tool (above the Stage) to make the sprite smaller.<br /></li>
 <li>Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again.</li>
 </ol>
 <p><img src="d55a1a116e2f1450af684695fecca7d1d50a0b11.png" alt="when FLAG clicked
@@ -98,7 +98,7 @@
 <section id="things-to-try-1" class="level2 try">
 <h2>Things to try</h2>
 <ul>
-<li>Try changing the numbers in the <code class="blockgreen">pick random</code> and move blocks. How do they make the prey move differently?</li>
+<li>Try changing the numbers in the <code class="blockgreen">pick random</code> and move blocks. How do they make the prey move differently?<br /></li>
 <li>What does the <code class="blockblue">if on edge, bounce</code> block do? Take it out and see what happens.</li>
 </ul>
 </section>
@@ -107,7 +107,7 @@
 <h1>STEP 3: Hungry Fish eats the prey</h1>
 <p><strong>Now we want to make the Hungry Fish eat the prey!</strong> Once the Hungry Fish has caught the prey in its mouth, two things need to happen:</p>
 <ul>
-<li>The Hungry Fish needs to close its mouth and make a “chomp” sound.</li>
+<li>The Hungry Fish needs to close its mouth and make a “chomp” sound.<br /></li>
 <li>The prey needs to disappear, then reappear a short while later.</li>
 </ul>
 <section id="activity-checklist-2" class="level2 check">
@@ -129,7 +129,7 @@ forever
 <h2>Test Your Project</h2>
 <p><strong>Try out your game again – can you spot any problems?</strong> Notice that the prey disappears no matter where it touches the Hungry Fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!</p>
 <ol>
-<li>How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the <code class="blocklightblue">touching color</code> block, and see if it is touching the fish’s blue teeth. To do this, replace the <code class="blocklightblue">touching</code> block with a <code class="blocklightblue">touching color</code> block in your script, click on the color in the block and then click again on the fish’s teeth.</li>
+<li>How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the <code class="blocklightblue">touching color</code> block, and see if it is touching the fish’s blue teeth. To do this, replace the <code class="blocklightblue">touching</code> block with a <code class="blocklightblue">touching color</code> block in your script, click on the color in the block and then click again on the fish’s teeth.<br /></li>
 <li>Next we can make the prey move to a random point on the screen before reappearing using a <code class="blockblue">go to</code> block, and giving it a random value for <strong>x</strong> and <strong>y</strong>.</li>
 </ol>
 <p><img src="66e79c114cb9343ecffc908cc3179fe6db736d23.png" alt="when FLAG clicked
@@ -164,7 +164,7 @@ forever
     " /></p>
 <p><strong>Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.</strong></p>
 <ol>
-<li>Add the <strong>resources/mouth-closed.png</strong> costume and the <strong>resources/chomp.mp3</strong> sound to the Hungry Fish sprite.</li>
+<li>Add the <strong>resources/mouth-closed.png</strong> costume and the <strong>resources/chomp.mp3</strong> sound to the Hungry Fish sprite.<br /></li>
 <li>Then, add a new script to the Hungry Fish to respond to the message <code class="blockyellow">broadcast</code> by the prey. This script should make the fish play the <strong>‘chomp’</strong> sound and <code class="blockpurple">switch to</code> the mouth-closed costume, wait briefly and then switch back.</li>
 </ol>
 <p><img src="23d3179ded053b5ca7880f47a9fd94024446d453.png" alt="when I receive [got me v]
